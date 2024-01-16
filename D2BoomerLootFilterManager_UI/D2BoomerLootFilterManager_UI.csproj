@@ -139,5 +139,19 @@
   <ItemGroup>
     <None Include="Resources\shopping-cart-xxl.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\D2Boomer_AppSettings\D2Boomer_AppSettings.csproj">
+      <Project>{8f85d0d7-b949-4272-9778-e818889732af}</Project>
+      <Name>D2Boomer_AppSettings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\D2Boomer_MPQLibrary\Lib_D2Boomer_MPQ.csproj">
+      <Project>{08c481f1-1f8b-4746-b904-3afb3c787593}</Project>
+      <Name>Lib_D2Boomer_MPQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lib_D2Boomer_D2Data\Lib_D2Boomer_D2Data.csproj">
+      <Project>{e0b12e2b-d33a-4352-ba1c-9eb41ed2784f}</Project>
+      <Name>Lib_D2Boomer_D2Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
