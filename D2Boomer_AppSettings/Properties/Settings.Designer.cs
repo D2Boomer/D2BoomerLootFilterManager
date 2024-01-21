@@ -46,5 +46,34 @@ namespace D2Boomer_AppSettings.Properties {
                 this["D2B_OutputPath"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
+<ArrayOfString xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+  <string>Sets</string>
+  <string>UniqueItems</string>
+  <string>SetItems</string>
+  <string>Armor</string>
+  <string>Gems</string>
+  <string>Weapons</string>
+  <string>Misc</string>
+  <string>Skills</string>
+  <string>MonStats</string>
+  <string>Runes</string>
+  <string>ItemStatCost</string>
+  <string>MagicPrefix</string>
+  <string>Properties</string>
+  <string>MagicSuffix</string>
+  <string>ItemTypes</string>
+  <string>CharStats</string>
+  <string>NPC</string>
+  <string>CubeMain</string>
+</ArrayOfString>")]
+        public global::System.Collections.Specialized.StringCollection RequiredTxtFiles {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["RequiredTxtFiles"]));
+            }
+        }
     }
 }

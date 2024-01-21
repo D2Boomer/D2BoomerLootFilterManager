@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -83,6 +83,8 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\tvNode.cs" />
+    <Compile Include="Models\UniqueItems_TreeView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ThemeColor.cs" />
@@ -148,9 +150,9 @@
       <Project>{08c481f1-1f8b-4746-b904-3afb3c787593}</Project>
       <Name>Lib_D2Boomer_MPQ</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Lib_D2Boomer_D2Data\Lib_D2Boomer_D2Data.csproj">
-      <Project>{e0b12e2b-d33a-4352-ba1c-9eb41ed2784f}</Project>
-      <Name>Lib_D2Boomer_D2Data</Name>
+    <ProjectReference Include="..\Lib_D2Data\Lib_D2Data.csproj">
+      <Project>{595e66e7-763b-4d09-a729-f2c0052e380d}</Project>
+      <Name>Lib_D2Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using D2BoomerLootFilterManager_UI.UserControls;
+using D2BoomerLootFilterManager_UI.Models;
+using Lib_D2Data;
 
 namespace D2BoomerLootFilterManager_UI.Forms
 {
@@ -34,11 +36,22 @@ namespace D2BoomerLootFilterManager_UI.Forms
 
         private void EquipmentForm_Load(object sender, EventArgs e)
         {
-            tv_UniqueItems.Nodes.Add(new TreeNode("Class Specific", new TreeNode[] {
-                new TreeNode("Amazon"),
-                new TreeNode("Assassin"),
-                new TreeNode("Etc.")
-            }));
+            UniqueItems_TreeView uniqueItems = new UniqueItems_TreeView();
+
+            foreach (tvNode ParentNode in uniqueItems.ParentNodes)
+            {
+                TreeNode root = tv_UniqueItems.Nodes.Add(ParentNode.Code, ParentNode.Description);
+
+                foreach (tvNode child in ParentNode.Children)
+                {
+                    Console.WriteLine("Adding Child: " + child.Description + " from parent node " + ParentNode.Description);
+                    root.Nodes.Add(child.Code, child.Description);
+                }
+            }
+
+            
+
+            tv_UniqueItems.Refresh();
         }
 
         private void button1_Click_1(object sender, EventArgs e)

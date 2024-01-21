@@ -8,5 +8,28 @@
     <Setting Name="D2B_OutputPath" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="RequiredTxtFiles" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;string&gt;Sets&lt;/string&gt;
+  &lt;string&gt;UniqueItems&lt;/string&gt;
+  &lt;string&gt;SetItems&lt;/string&gt;
+  &lt;string&gt;Armor&lt;/string&gt;
+  &lt;string&gt;Gems&lt;/string&gt;
+  &lt;string&gt;Weapons&lt;/string&gt;
+  &lt;string&gt;Misc&lt;/string&gt;
+  &lt;string&gt;Skills&lt;/string&gt;
+  &lt;string&gt;MonStats&lt;/string&gt;
+  &lt;string&gt;Runes&lt;/string&gt;
+  &lt;string&gt;ItemStatCost&lt;/string&gt;
+  &lt;string&gt;MagicPrefix&lt;/string&gt;
+  &lt;string&gt;Properties&lt;/string&gt;
+  &lt;string&gt;MagicSuffix&lt;/string&gt;
+  &lt;string&gt;ItemTypes&lt;/string&gt;
+  &lt;string&gt;CharStats&lt;/string&gt;
+  &lt;string&gt;NPC&lt;/string&gt;
+  &lt;string&gt;CubeMain&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
