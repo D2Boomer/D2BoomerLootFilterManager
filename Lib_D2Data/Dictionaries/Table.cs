@@ -64,6 +64,7 @@ namespace Lib_D2Data.Dictionaries
         {
             var value = string.Empty;
 
+            /*
             if (key == "tpfs") key = "opl";
             if (key == "tpcs") key = "cps";
             if (key == "tpls") key = "lps";
@@ -76,6 +77,8 @@ namespace Lib_D2Data.Dictionaries
             if (key == "tpcl") key = "cpl";
             if (key == "tpll") key = "lpl";
             if (key == "tpgl") key = "gps";
+            if (key == "rar") key = "uhn";
+            */
 
 
 

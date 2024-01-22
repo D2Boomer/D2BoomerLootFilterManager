@@ -74,6 +74,7 @@ namespace Lib_D2Data.Equipment
                 var armor = new Armor
                 {
                     Code = row["code"],
+                    Namestr = row["namestr"],
                     MinAc = minAc.Value,
                     MaxAc = maxAc.Value,
                     RequiredStrength = requiredStrength.Value,
@@ -95,6 +96,7 @@ namespace Lib_D2Data.Equipment
             {
                 EquipmentType = this.EquipmentType,
                 Code = this.Code,
+                Namestr = this.Namestr,
                 RequiredStrength = this.RequiredStrength,
                 RequiredDexterity = this.RequiredDexterity,
                 Durability = this.Durability,

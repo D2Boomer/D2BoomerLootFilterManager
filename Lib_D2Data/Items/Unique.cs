@@ -10,6 +10,10 @@ namespace Lib_D2Data.Items
     public class Unique : Item
     {
         public string Type { get; set; }
+        public string Prop1 { get; set; }
+        public string Prop2 { get; set; }
+        public string Prop3 { get; set; }
+        public string Prop4 { get; set; }
 
         public static List<Unique> Import(string excelFolder)
         {
@@ -42,6 +46,10 @@ namespace Lib_D2Data.Items
                 var unique = new Unique
                 {
                     Index = name,
+                    Prop1 = row["prop1"],
+                    Prop2 = row["prop2"],
+                    Prop3 = row["prop3"],
+                    Prop4 = row["prop4"],
                     Enabled = row["enabled"] == "1",
                     ItemLevel = itemLevel.Value,
                     RequiredLevel = requiredLevel.Value,

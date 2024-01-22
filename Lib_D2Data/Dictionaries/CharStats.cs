@@ -91,6 +91,7 @@ namespace Lib_D2Data.Dictionaries
                 {
                     AllClasses.Add(row["class"].ToString());
                 }
+
                 CharStats[charStat.Class.ToLower().Substring(0, 3)] = charStat;
             }
         }

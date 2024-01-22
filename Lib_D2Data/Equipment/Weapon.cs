@@ -93,6 +93,7 @@ namespace Lib_D2Data.Equipment
                 {
                     DamageTypes = damageTypes,
                     Code = row["code"],
+                    Namestr = row["namestr"],
                     EquipmentType = EquipmentType.Weapon,
                     RequiredStrength = !string.IsNullOrEmpty(row["reqstr"]) ? int.Parse(row["reqstr"]) : 0,
                     RequiredDexterity = !string.IsNullOrEmpty(row["reqdex"]) ? int.Parse(row["reqdex"]) : 0,
@@ -119,6 +120,7 @@ namespace Lib_D2Data.Equipment
             {
                 EquipmentType = this.EquipmentType,
                 Code = this.Code,
+                Namestr = this.Namestr,
                 RequiredStrength = this.RequiredStrength,
                 RequiredDexterity = this.RequiredDexterity,
                 Durability = this.Durability,

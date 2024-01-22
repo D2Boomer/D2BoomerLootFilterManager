@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Lib_D2Data.Dictionaries;
 using Newtonsoft.Json;
 
@@ -7,7 +8,8 @@ namespace Lib_D2Data.Equipment
     public class Equipment : ICloneable
     {
         public EquipmentType EquipmentType { get; set; }
-        public string Name { get { return Table.GetValue(Code); } }
+        public string Namestr { get; set; }
+        public string Name { get { return Table.GetValue(Namestr); } }
         [JsonIgnore]
         public string Code { get; set; }
         public int RequiredStrength { get; set; }
@@ -19,10 +21,12 @@ namespace Lib_D2Data.Equipment
 
         public object Clone()
         {
+
             return new Equipment
             {
                 EquipmentType = this.EquipmentType,
                 Code = this.Code,
+                Namestr = this.Namestr,
                 RequiredStrength = this.RequiredStrength,
                 RequiredDexterity = this.RequiredDexterity,
                 Durability = this.Durability,

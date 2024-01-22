@@ -20,6 +20,8 @@ namespace D2BoomerLootFilterManager_UI
             MPQSetup.Begin();
             D2Data.LoadIfNotLoaded();
 
+            // D2Data.Uniques.First().
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormMainMenu());
